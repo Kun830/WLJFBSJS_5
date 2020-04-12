@@ -1,0 +1,25 @@
+Homework5
+
+P2
+
+Assuming that the ip address of A is a, the ip address of C is c.
+
+From server to message stream:
+
+To host A: source port:26145, destination port:7532. IP address: a
+
+To host C: left:source port:7532, destination port:80. right: source port:26145, destination port:80. Both of them the destination IP address is c.
+
+P3
+
+01010011+01100110=10111001
+10111001+01110100=1 00101101
+00101101+1=00101110   
+Complement code:11010001
+
+The advantages of using complement codes:
+1.Independent of whether the system is large end or small end.
+2.Simple and fast to calaulate the checksum.
+The receiver checks the error by adding three bytes to the check sum. If any bit is 0, it indicates an error
+1-bit error will definitely lead to different results, however, 2-bit error may not be detected.
+
